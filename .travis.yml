@@ -6,5 +6,6 @@ services:
 berfore_install:
     - docker build -t pthirannamur/docker-react -f Dockerfile.dev .
 
-script:
+    
+script: 
     - docker run -e CI=true pthirannamur/docker-react npm run test
